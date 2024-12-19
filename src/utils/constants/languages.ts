@@ -1,0 +1,28 @@
+// Common languages sorted by native speakers worldwide
+export const LANGUAGES = [
+  { code: 'en', name: 'English' },
+  { code: 'zh', name: 'Chinese (Mandarin)' },
+  { code: 'hi', name: 'Hindi' },
+  { code: 'es', name: 'Spanish' },
+  { code: 'ar', name: 'Arabic' },
+  { code: 'bn', name: 'Bengali' },
+  { code: 'pt', name: 'Portuguese' },
+  { code: 'ru', name: 'Russian' },
+  { code: 'ja', name: 'Japanese' },
+  { code: 'de', name: 'German' },
+  { code: 'fr', name: 'French' },
+  { code: 'it', name: 'Italian' },
+  { code: 'ko', name: 'Korean' },
+  { code: 'tr', name: 'Turkish' },
+  { code: 'vi', name: 'Vietnamese' },
+  { code: 'ta', name: 'Tamil' },
+  { code: 'ur', name: 'Urdu' },
+  { code: 'fa', name: 'Persian' },
+  { code: 'th', name: 'Thai' },
+  { code: 'gu', name: 'Gujarati' },
+  { code: 'pl', name: 'Polish' },
+  { code: 'uk', name: 'Ukrainian' },
+  { code: 'ml', name: 'Malayalam' },
+  { code: 'kn', name: 'Kannada' },
+  { code: 'other', name: 'Other' }
+].sort((a, b) => a.code === 'en' ? -1 : b.code === 'en' ? 1 : a.name.localeCompare(b.name));
